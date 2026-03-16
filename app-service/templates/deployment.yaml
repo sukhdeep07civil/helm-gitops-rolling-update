@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: {{ .Values.replicaCount }}
   strategy:
-    type: rollingUpdate
+    type: RollingUpdate
     rollingUpdate:
       maxUnavailable: 1
       maxSurge: 1 
@@ -24,4 +24,4 @@ spec:
             - containerPort: {{ .Values.service.port }}
           env:
             - name: PORT
-              value: {{ .Values.env.port }}
+              value: "{{ .Values.env.port | quote }}"
