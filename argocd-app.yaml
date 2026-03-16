@@ -8,7 +8,7 @@ spec:
 
   source: 
     repoURL: https://github.com/sukhdeep07civil/helm-gitops-rolling-update.git
-    targetRevision: HEAD
+    targetRevision: main
     path: app-service
 
   destination:
