@@ -24,4 +24,4 @@ spec:
             - containerPort: {{ .Values.service.port }}
           env:
             - name: PORT
-              value: "{{ .Values.env.port }}"
+              value: {{ .Values.env.port | quote }}
