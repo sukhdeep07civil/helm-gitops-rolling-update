@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/",(req,res)=>{
-    res.send("Version 1 running");
+    res.send("Version 2 running");
 })
 
 app.listen(PORT,()=>{
